@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>유혜미 | 백엔드 개발자 이력서</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="page">
+      <!-- ══════════════════════════════ HEADER ══════════════════════════════ -->
+      <div class="header">
+        <div class="header-top">
+          <div>
+            <h1>유혜미</h1>
+            <div class="title-eng">Backend Developer</div>
+          </div>
+          <div class="header-contact">
+            <span
+              >✉️ <a href="mailto:dutjz26@gmail.com">dutjz26@gmail.com</a></span
+            >
+            <span>경력 7년 4개월</span>
+          </div>
+        </div>
+        <div class="summary-box">
+          8년차 Java 백엔드 개발자로 Spring Boot와 JPA 기반 웹 서비스
+          설계·구현·운영 경험을 보유하고 있습니다.<br />이주노동자 생활 포털,
+          마이데이터, SI 등 다양한 도메인에서 API 개발, DB 설계, 배포 자동화,
+          어드민 고도화를 수행했습니다.<br />
+          안정적 서비스 운영과 성능 최적화에 집중하며, 협업과 커뮤니케이션에도
+          강점을 가지고 있습니다.
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════ SKILLS ══════════════════════════════ -->
+      <div class="skills-bar">
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Spring Boot</span>
+        <span class="skill-tag">JPA</span>
+        <span class="skill-tag">MyBatis</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">Redis</span>
+        <span class="skill-tag gray">Git / GitLab</span>
+        <span class="skill-tag gray">Jenkins</span>
+        <span class="skill-tag gray">Firebase FCM</span>
+        <span class="skill-tag gray">Vue.js</span>
+        <span class="skill-tag gray">React.js</span>
+      </div>
+
+      <!-- ══════════════════════════════ BODY ══════════════════════════════ -->
+      <div class="body">
+        <!-- ── 경력 ── -->
+        <div class="section">
+          <div class="section-title">Work Experience</div>
+
+          <!-- ──────── 클링커즈 ──────── -->
+          <div class="company-block">
+            <div class="company-header">
+              <div class="company-name">클링커즈 (Clinkers)</div>
+              <div class="company-period">2023.06 ~ 2026.03 · 2년 10개월</div>
+            </div>
+            <div class="company-meta">
+              <span class="role">서비스개발팀 팀장 · 백엔드 개발자</span>
+              <span>이주노동자 대상 생활·금융 포털 및 B2B 플랫폼 기업</span>
+            </div>
+
+            <!-- 글로우 -->
+            <div class="project">
+              <div class="project-header">
+                <div class="project-name">
+                  글로우(Glow) — 한국 거주 외국인 대상 포털 (MAU 5만)
+                </div>
+                <div class="project-period">2023.09 ~ 2026.03</div>
+              </div>
+              <div class="project-desc">
+                커뮤니티 · 모임 · 만남 · 생활정보 · 환율 · 뉴스 · 채팅 · AI 챗봇
+                제공
+              </div>
+              <ul class="detail-list">
+                <li>
+                  <strong>대출 비교 서비스:</strong> 복수 금융 기관에 동시 요청
+                  후 응답 도착 순서대로 WebSocket을 통해 클라이언트에 실시간
+                  반환하는 비동기 처리 구조 설계
+                </li>
+                <li>
+                  <strong>데이터 수집 파이프라인:</strong> 6개 송금사 API
+                  연동으로 일 6만 건 환율 데이터 자동 수집, 3개국 뉴스 크롤링 후
+                  14개 언어 자동 번역 처리
+                </li>
+                <li>
+                  <strong>채팅 플랫폼 전환 (Sendbird → RocketChat):</strong>
+                  비용 절감 및 다국어 지원 목적, 기존 채팅 데이터 마이그레이션
+                  및 클라이언트 API 인터페이스 공통화로 클라이언트 측 변경
+                  최소화
+                </li>
+                <li>
+                  <strong>DB 스키마 설계:</strong> 100개 이상 테이블 초기 설계
+                  및 지속적 개선, 도메인별 독립 스키마로 서비스 확장 시 영향
+                  범위 최소화
+                </li>
+                <li>
+                  <strong>JWT 인증 구현:</strong> Spring Security 기반
+                  Access/Refresh 토큰 이중 구조, Spring Security Filter Chain
+                  커스터마이징
+                </li>
+                <li>
+                  <strong>Redis 캐싱 최적화:</strong> 다국어 서비스 특성상 알림
+                  문구를 Redis 캐싱 처리, 변경 시 수동 초기화 API로 DB 반복 조회
+                  제거
+                </li>
+                <li>
+                  <strong>HEIC 이미지 처리:</strong> iOS 사용자 업로드 오류를
+                  ImageMagick(im4java) 기반 서버사이드 HEIC → JPG 변환으로 해결
+                </li>
+                <li>
+                  <strong>Third-party 연동:</strong> Firebase FCM 푸시 알림
+                  (iOS/Android), mobileOK 본인인증, Slack 알림
+                </li>
+                <li>
+                  <strong>공통 아키텍처:</strong> GlobalExceptionHandler +
+                  ErrorCode 기반 예외 처리 표준화, Jasypt 프로퍼티 암호화,
+                  SpringDoc 기반 Swagger 커스터마이징
+                </li>
+                <li>
+                  <strong>CMS 어드민 개발:</strong> 대시보드 (통계
+                  집계)·회원·배너·콘텐츠 관리 API 개발
+                </li>
+                <li>
+                  <strong>팀 리드:</strong> 3명 규모 일정·업무 범위 조율,
+                  기획·디자인·인프라 유관부서 협업, 깃 브랜치 전략 및 온보딩
+                  지원
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">JPA</span>
+                <span class="tag">Redis</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Firebase FCM</span>
+                <span class="tag">WebSocket</span>
+                <span class="tag green">JWT / Spring Security</span>
+              </div>
+            </div>
+
+            <!-- 글로우 AI 챗봇 -->
+            <div class="project">
+              <div class="project-header">
+                <div class="project-name">
+                  글로우 AI 챗봇 — RAG 기반 생활정보 챗봇 MVP
+                </div>
+                <div class="project-period">2025.06 ~ 2025.07</div>
+              </div>
+              <ul class="detail-list">
+                <li>
+                  <strong>LangChain Agent 설계:</strong> OpenAI Functions Agent
+                  + GPT-4o-mini 기반, 생활정보 전용 search_glow 도구 정의 및
+                  에이전트 흐름 설계
+                </li>
+                <li>
+                  <strong>벡터 DB 구축:</strong> MySQL 컨텐츠를
+                  RecursiveCharacterTextSplitter로 청크화 → OpenAI Embeddings →
+                  FAISS 인덱스 구축 파이프라인 직접 작성
+                </li>
+                <li>
+                  <strong>다국어 대응:</strong> 다국어 질문 쿼리를 영어 번역 후
+                  벡터 검색, 응답은 사용자 언어로 반환
+                </li>
+                <li>
+                  <strong>Redis 대화 히스토리:</strong>
+                  RedisChatMessageHistory로 대화 맥락 유지
+                </li>
+                <li>
+                  <strong>FastAPI + SSE:</strong> 토큰 단위 실시간 스트리밍 응답
+                  구현
+                </li>
+                <li>
+                  <strong>챗봇 관리:</strong> 채팅 타입별 프롬프트 관리, 대화 히스토리 저장, 사용자 피드백 수집 API 설계
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag purple">Python</span>
+                <span class="tag purple">FastAPI</span>
+                <span class="tag purple">LangChain</span>
+                <span class="tag purple">GPT-4o-mini</span>
+                <span class="tag purple">FAISS</span>
+                <span class="tag purple">OpenAI Embeddings</span>
+                <span class="tag">Redis</span>
+                <span class="tag">SSE</span>
+              </div>
+            </div>
+
+            <!-- 리턴잇 -->
+            <div class="project">
+              <div class="project-header">
+                <div class="project-name">
+                  리턴잇(Returnit) SI — 배달 다회용기 수거 관리 시스템
+                </div>
+                <div class="project-period">
+                  2024.01 ~ 2024.04 이후 유지보수
+                </div>
+              </div>
+              <ul class="detail-list">
+                <li>
+                  <strong>PHP → Java 마이그레이션:</strong> PHP(그누보드) 운영
+                  서비스를 Java/Spring 기반으로 마이그레이션, 추가 요구사항 병행
+                  개발 (약 3개월 / API 170개 이상)
+                </li>
+                <li>
+                  <strong>멀티 DataSource 구성:</strong> 기존 PHP DB · 신규 DB ·
+                  마이그레이션용 DB 3개를 Spring 멀티 DataSource로 구성해 동시
+                  운영
+                </li>
+                <li>
+                  <strong>핫픽스 대응:</strong> 운영 전환 당일 PHP DB의 1인
+                  다계정 구조적 문제 발견, 즉시 롤백 결정 후 로그인 시 계정 통합
+                  핫픽스 적용 후 장애 없이 재전환 완료
+                </li>
+                <li>
+                  <strong>테스트 코드 전략:</strong> 실서버 연동 테스트 불가
+                  환경에서 목업 기반 시나리오별 테스트 코드 작성으로 운영 전환
+                  전 사이드이펙트 조기 발견 및 대응
+                </li>
+                <li>
+                  <strong>상태 전이 자동화:</strong> 회수 8단계 상태 전이를
+                  스케줄러로 자동화, 1분·5분·1시간 주기 분리로 불필요한 DB 조회
+                  감소 및 처리 지연 최소화
+                </li>
+                <li>
+                  <strong>택배사 공통 인터페이스 설계:</strong> 신규 택배사 추가
+                  시 핵심 로직 수정 없이 구현체만 작업하는 구조로 확장 공수 절감
+                </li>
+                <li>
+                  <strong>데이터 무결성 확보:</strong> DB Unique Key +
+                  DataIntegrityViolationException 핸들링으로 소셜 로그인 중복
+                  요청에 의한 회원 정보 중복 저장 이슈 해결
+                </li>
+                <li>
+                  <strong>Third-party 연동:</strong> Solapi 알림톡, 카카오 소셜
+                  로그인, 택배사 API(LPS·DHero)
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">JPA</span>
+                <span class="tag">MySQL</span>
+                <span class="tag green">멀티 DataSource</span>
+                <span class="tag green">Solapi 알림톡</span>
+                <span class="tag orange">테스트 코드</span>
+              </div>
+            </div>
+
+            <!-- 세이프키친 -->
+            <div class="project">
+              <div class="project-header">
+                <div class="project-name">
+                  세이프키친(SafeKitchen) SI — 청소업체 온라인 통합 관리 시스템
+                </div>
+                <div class="project-period">
+                  2023.06 ~ 2023.12 이후 유지보수
+                </div>
+              </div>
+              <ul class="detail-list">
+                <li>
+                  <strong>시스템 신규 구축:</strong> Java 11 / Spring Boot 2.7
+                  기반으로 오프라인 업무 전반을 온라인 관리 시스템으로 신규 구축
+                  (약 6개월 / API 210개 이상)
+                </li>
+                <li>
+                  <strong>AOP 경량 인증:</strong> SSR+API 혼합 구조에서 Spring
+                  Security 없이 AOP+JWT 커스텀 어노테이션으로 역할별 경량 인증
+                  구현
+                </li>
+                <li>
+                  <strong>알림톡 연동:</strong> 업무 배정·완료 알림을 위한
+                  인포뱅크 알림톡 연동 구현
+                </li>
+                <li>
+                  <strong>PDF 보고서 생성:</strong> iTextPDF로 위생 점검 보고서
+                  PDF 동적 생성 및 다운로드 기능 구현
+                </li>
+                <li>
+                  <strong>HEIC 업로드 처리:</strong> SFTP 업로드 시 확장자 감지
+                  후 JSch SSH 원격 접속, Python 변환 스크립트 실행으로 서버 측
+                  자동 변환 처리
+                </li>
+                <li>
+                  <strong>이미지 후처리:</strong> EXIF Orientation 값 기반
+                  이미지 자동 회전 교정(8케이스 처리) 및 업로드 시 70% 품질 압축
+                  적용
+                </li>
+                <li>
+                  <strong>파일 업로드 안정화:</strong> SFTP 커넥션 한도 초과로
+                  인한 업로드 오류 원인 파악 후 커넥션 생성 로직 개선 및
+                  인프라팀 협의를 통한 최대 연결 수 조정으로 안정화
+                </li>
+                <li>
+                  <strong>업무 일정 자동화:</strong> @Scheduled 기반 매월 20일
+                  익월 업무 일정 자동 복제 스케줄러 구현
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">MyBatis</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">인포뱅크 알림톡</span>
+                <span class="tag orange">iText PDF</span>
+                <span class="tag orange">AOP</span>
+                <span class="tag purple">Python / JSch</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ──────── 헥토데이터 ──────── -->
+          <div class="company-block">
+            <div class="company-header">
+              <div class="company-name">
+                헥토데이터 (HectoData, 구 코드에프)
+              </div>
+              <div class="company-period">2020.03 ~ 2023.04 · 3년 2개월</div>
+            </div>
+            <div class="company-meta">
+              <span class="role">마이데이터팀 파트리더 · 백엔드 개발자</span>
+              <span>데이터 플랫폼 (스크래핑 솔루션·마이데이터·핀테크 API)</span>
+            </div>
+
+            <!-- 마이데이터 -->
+            <div class="project">
+              <div class="project-header">
+                <div class="project-name">
+                  마이데이터 서비스 구축 — 핀퐁(B2C) &amp; 핀퐁플러스(B2B2C)
+                </div>
+                <div class="project-period">2021.08 ~ 2023.04</div>
+              </div>
+              <ul class="detail-list">
+                <li>
+                  <strong>허가 취득 및 서비스 구축:</strong> 마이데이터
+                  예비허가(2021.10)·본허가(2021.12) 획득 후 금융 4개 업권
+                  (보험·은행·카드·증권) REST API 백엔드 서버 개발 및 운영
+                </li>
+                <li>
+                  <strong>폐쇄망 Mock 개발:</strong> 본허가 취득 전 폐쇄망
+                  환경에서 JSON 파일로 외부 통신을 대체하는 Mock 구조로 개발
+                  진행
+                </li>
+                <li>
+                  <strong>mTLS 도입:</strong> 본허가 취득 후 마이데이터 표준
+                  규격에 따라 HTTP → PKCS12 기반 mTLS로 전환, TLSv1.1 / TLSv1.3
+                  버전 분기 처리
+                </li>
+                <li>
+                  <strong>업권 순차 오픈:</strong> 보험(40개 기관) → 은행
+                  일반(30) · 저축(80) → 카드(28) → 증권(31) 순차 오픈
+                </li>
+                <li>
+                  <strong>업권별 인터페이스 설계:</strong> 보험 업권 최초 구축
+                  시 목록/상세 조회 공통 인터페이스 기반 구조 설계, 이후 업권
+                  추가 시 기존 코드 영향 최소화
+                </li>
+                <li>
+                  <strong>성능 개선:</strong> 기관별 순차 API 호출 방식을
+                  ExecutorService 고정 스레드풀(최대 5개) 기반 병렬 처리로 전환,
+                  응답 대기 시간 단축
+                </li>
+                <li>
+                  <strong>보안 인증 구성:</strong> Spring Security OAuth2
+                  Resource Server 구성, 마이데이터 외부 기관 통신 시 RSA 공개키
+                  기반 JWT 서명 검증
+                </li>
+                <li>
+                  <strong>JWT 발급 및 검증:</strong> jjwt 기반 HS256 서명 JWT
+                  발급, AOP Aspect에서 토큰 만료 · 권한 검증 처리
+                </li>
+                <li>
+                  <strong>통합인증 처리:</strong>
+                  공동인증서(금결원·코스콤·KICA·한국전자인증) 및
+                  사설인증서(네이버·KB) 통합인증 처리
+                </li>
+                <li>
+                  <strong>인메모리 데이터 관리:</strong> 인가코드, 전자서명,
+                  사설인증, AES256 키 등 Hazelcast로 관리, 스케줄러로 TTL 자동
+                  만료 처리
+                </li>
+                <li>
+                  <strong>Third-party 연동:</strong> KCB OkCert 본인인증, Petra
+                  DB(DB 컬럼 레벨 암호화 솔루션)
+                </li>
+                <li>
+                  <strong>예외 처리 표준화:</strong> @RestControllerAdvice 기반
+                  전역 예외 처리, 사전 정의 오류 코드 체계로 일관된 에러 응답
+                  반환
+                </li>
+                <li>
+                  <strong>로그 체계 구축:</strong> 서비스 오픈 후 로그 부족으로
+                  장애 원인 파악이 지연되는 문제 경험, Interceptor
+                  preHandle/afterCompletion으로 요청·응답 이력, AOP Aspect로
+                  토큰 체크 이력을 DB에 적재해 원인 추적 시간 단축
+                </li>
+                <li>
+                  <strong>감사 로그 적재:</strong> 마이데이터 법적 의무인
+                  전송요구 이력(성공/실패) 전수 감사 로그 DB 적재
+                </li>
+                <li>
+                  <strong>파트리더:</strong> 업무 범위 조율, 기획/디자인/인프라
+                  유관부서 협업, 코드 리뷰 및 온보딩 지원
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">MyBatis</span>
+                <span class="tag">MySQL</span>
+                <span class="tag green">mTLS / PKCS12</span>
+                <span class="tag green">마이데이터 API · 4개 업권</span>
+                <span class="tag green">Hazelcast</span>
+                <span class="tag orange">AOP</span>
+                <span class="tag orange">ExecutorService</span>
+              </div>
+            </div>
+
+            <!-- CODEF 빌링 -->
+            <div class="project">
+              <div class="project-header">
+                <div class="project-name">codef 빌링 시스템 재구축</div>
+                <div class="project-period">2021.06 ~ 2021.07</div>
+              </div>
+              <ul class="detail-list">
+                <li>
+                  <strong>시스템 전면 재설계:</strong> 요금 정책 변경에 따른
+                  과금·자동결제·청구 시스템 전면 재설계 및 구현
+                </li>
+                <li>
+                  <strong>월별 청구서 자동 생성:</strong> Spring Scheduler 기반
+                  배치로 구간별 요금·일할 계산·고객 유형별 과금 정책을 자동
+                  처리하는 월별 청구서 생성 시스템 개발
+                </li>
+                <li>
+                  <strong>배치 안정성 확보:</strong> 비정상 종료된 배치 자동
+                  감지 및 재처리 로직 구현으로 운영 안정성 향상
+                </li>
+                <li>
+                  <strong>부분 실패 예외 처리:</strong> 청구서 생성 오류 발생 시
+                  해당 고객사만 스킵하고 나머지 처리 계속 진행하는 예외 처리
+                  구조 설계
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Spring Scheduler</span>
+                <span class="tag">MySQL</span>
+              </div>
+            </div>
+
+            <!-- CODEF API 운영 -->
+            <div class="project">
+              <div class="project-header">
+                <div class="project-name">codef API 운영, 어드민 개발</div>
+                <div class="project-period">2020.11 ~ 2021.07</div>
+              </div>
+              <ul class="detail-list">
+                <li>
+                  <strong>B2B API 서비스 운영:</strong> 스크래핑 모듈을 API로
+                  제공하는 B2B 서비스 운영 및 기능 개선 담당
+                </li>
+                <li>
+                  <strong>API 가이드 사이트 구축:</strong> 하드코딩 문서를 DB
+                  기반 동적 문서화로 전환하여 문서 관리 자동화
+                </li>
+                <li>
+                  <strong>고객사 기술 지원:</strong> 고객사 기술 담당자와 직접
+                  커뮤니케이션하며 API 연동 이슈 분석·해결
+                </li>
+                <li>
+                  <strong>인증·인가 체계 구축:</strong> Spring Framework 기반
+                  REST API 설계 및 구현, JWT + BouncyCastle 암호화 적용
+                </li>
+                <li>
+                  <strong>JWT 자동 갱신:</strong> 어드민 JWT 만료
+                  구간(15~29분)에서 응답 헤더로 신규 토큰 전달, 클라이언트 자동
+                  갱신 처리
+                </li>
+                <li>
+                  <strong>Excel 내보내기:</strong> Apache POI SXSSFWorkbook으로
+                  대용량 데이터 Excel 내보내기 (다중 시트, 스타일/포맷 포함)
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Framework</span>
+                <span class="tag">MyBatis</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JWT</span>
+                <span class="tag orange">Apache POI</span>
+                <span class="tag gray">Vue.js</span>
+              </div>
+            </div>
+
+            <!-- e-spider 어드민 -->
+            <div class="project">
+              <div class="project-header">
+                <div class="project-name">
+                  e-spider 스크래핑 어드민 고도화 및 통합
+                </div>
+                <div class="project-period">2020.03 ~ 2020.10</div>
+              </div>
+              <ul class="detail-list">
+                <li>
+                  <strong>어드민 통합:</strong> 프로젝트별로 분산된 4개 스크래핑
+                  어드민을 단일 통합 어드민으로 재구축하여 운영 및 유지보수
+                  포인트 단일화
+                </li>
+                <li>
+                  <strong>운영 생산성 향상:</strong> macOS 네이티브 앱(Xcode)
+                  기반 단건 등록 방식을 웹 어드민(Vue)으로 대체, OS 환경 제약
+                  없이 대량 등록 가능하도록 전환
+                </li>
+                <li>
+                  <strong>REST API 설계:</strong> Vue, Angular 등 서로 다른
+                  프론트 스택과의 연동을 고려한 REST API 설계 및 JWT 기반 인증
+                  구현
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Framework</span>
+                <span class="tag">MyBatis</span>
+                <span class="tag">MySQL</span>
+                <span class="tag gray">Vue.js</span>
+                <span class="tag gray">Angular.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ──────── 원투씨엠 ──────── -->
+          <div class="company-block">
+            <div class="company-header">
+              <div class="company-name">원투씨엠</div>
+              <div class="company-period">2018.03 ~ 2019.06 · 1년 4개월</div>
+            </div>
+            <div class="company-meta">
+              <span class="role"
+                >R&amp;D연구소 인증팀 팀원 · 백엔드 개발자</span
+              >
+              <span
+                >Java · Spring Framework · MySQL · MyBatis · JPA · Vue.js</span
+              >
+            </div>
+
+            <!-- 배포 자동화 -->
+            <div class="project">
+              <div class="project-header">
+                <div class="project-name">배포 프로세스 자동화</div>
+                <div class="project-period">2019.02 ~ 2019.03</div>
+              </div>
+              <ul class="detail-list">
+                <li>
+                  <strong>CI/CD 파이프라인 전환:</strong> FTP 수동 배포
+                  프로세스를 GitLab, Jenkins 기반으로 전환
+                </li>
+                <li>
+                  <strong>배포 자동화:</strong> 브랜치 선택부터 빌드, 서버별 WAR
+                  배포까지 자동화하여 배포 리드타임 단축 및 휴먼 에러 감소
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag gray">Jenkins</span>
+                <span class="tag gray">GitLab CI/CD</span>
+              </div>
+            </div>
+
+            <!-- KB부동산 -->
+            <div class="project">
+              <div class="project-header">
+                <div class="project-name">KB부동산 컨시어지 어드민 (SI)</div>
+                <div class="project-period">2018.12 ~ 2019.01</div>
+              </div>
+              <ul class="detail-list">
+                <li>
+                  <strong>통합 관리 시스템 개발:</strong> 부동산 매물 관리, 계약
+                  관리, 고객 상담 및 대출 진행 현황 관리 기능 백엔드/프론트 개발
+                </li>
+                <li>
+                  <strong>매물 관리 모듈 전담:</strong> BE + FE 전담 개발로 핵심
+                  도메인 기능 안정화 및 확장성 확보
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Framework</span>
+                <span class="tag">MyBatis</span>
+                <span class="tag">JPA</span>
+                <span class="tag">MySQL</span>
+                <span class="tag gray">Vue.js</span>
+              </div>
+            </div>
+
+            <!-- 운영 관리 시스템 -->
+            <div class="project">
+              <div class="project-header">
+                <div class="project-name">
+                  운영 관리 시스템(어드민) 개발/개선
+                </div>
+                <div class="project-period">2018.03 ~ 2019.06</div>
+              </div>
+              <ul class="detail-list">
+                <li>
+                  <strong>어드민 신규 개발:</strong> 생산·재고 관리 어드민 신규
+                  개발을 통해 오프라인 위주의 관리 프로세스를 시스템화
+                </li>
+                <li>
+                  <strong>좌표 보정 알고리즘 설계:</strong> 변형·손상된 스탬프
+                  좌표 보정 알고리즘 설계·구현으로 인증률 향상 및 오류 감소,
+                  국내/외 스탬프 교체 비용 절감
+                </li>
+                <li>
+                  <strong>인증 솔루션 안정화:</strong> 정전기 기반 물리 도장
+                  인증 솔루션 유지보수 및 안정화 작업 수행
+                </li>
+                <li>
+                  <strong>크롤링 자동화:</strong> Jsoup·Selenium 기반 외부
+                  데이터 크롤링 자동화로 기존 기기정보 및 dpi 수집 수작업 대비
+                  일일 2시간 절감
+                </li>
+                <li>
+                  <strong>인증 통계 어드민:</strong> 기간별 오류·인증률 시각화가
+                  가능한 통계 어드민 개발로 운영 인사이트 제공
+                </li>
+                <li>
+                  <strong>지속적 개선:</strong> 운영팀 요구사항을 기반으로
+                  화면·기능을 지속 개선하며 업무 효율 및 대응 속도 향상
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Framework</span>
+                <span class="tag">MyBatis</span>
+                <span class="tag">JPA</span>
+                <span class="tag">MySQL</span>
+                <span class="tag orange">Jsoup / Selenium</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /section -->
+
+        <!-- ── 학력 / 교육 ── -->
+        <div class="section">
+          <div class="section-title">Education</div>
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <div
+              class="etc-item"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+              "
+            >
+              <div>
+                <div class="label">KH정보교육원</div>
+                <p>[NCS] 응용SW엔지니어 / DB엔지니어 수료</p>
+                <p style="margin-top: 4px; color: #718096; font-size: 12px">
+                  Java · Servlet/JSP · Spring · MyBatis · JDBC · Oracle ·
+                  HTML/CSS/JavaScript
+                </p>
+              </div>
+              <div style="font-size: 12px; color: #718096; white-space: nowrap">
+                2017.06 ~ 2018.01
+              </div>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 10px;
+              "
+            >
+              <div
+                class="etc-item"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: baseline;
+                  width: 100%;
+                "
+              >
+                <div>
+                  <div class="label">대진대학교</div>
+                  <p>컴퓨터공학과 졸업(편입)</p>
+                </div>
+                <div
+                  style="font-size: 12px; color: #718096; white-space: nowrap"
+                >
+                  2016.03 ~ 2018.02
+                </div>
+              </div>
+
+              <div
+                class="etc-item"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: baseline;
+                  width: 100%;
+                "
+              >
+                <div>
+                  <div class="label">동국대학교 전산원</div>
+                  <p>컴퓨터공학과 졸업</p>
+                </div>
+                <div
+                  style="font-size: 12px; color: #718096; white-space: nowrap"
+                >
+                  2013.02 ~ 2016.02
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 자격증 ── -->
+        <div class="section">
+          <div class="section-title">Certifications</div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              gap: 10px;
+            "
+          >
+            <div
+              class="etc-item"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                width: 100%;
+              "
+            >
+              <div>
+                <div class="label">정보처리기사</div>
+                <p>한국산업인력공단</p>
+              </div>
+              <div style="font-size: 12px; color: #718096; white-space: nowrap">
+                2018.08
+              </div>
+            </div>
+
+            <div
+              class="etc-item"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                width: 100%;
+              "
+            >
+              <div>
+                <div class="label">네트워크관리사 2급</div>
+                <p>한국정보통신자격협회</p>
+              </div>
+              <div style="font-size: 12px; color: #718096; white-space: nowrap">
+                2015.09
+              </div>
+            </div>
+
+            <div
+              class="etc-item"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                width: 100%;
+              "
+            >
+              <div>
+                <div class="label">정보처리산업기사</div>
+                <p>한국산업인력공단</p>
+              </div>
+              <div style="font-size: 12px; color: #718096; white-space: nowrap">
+                2015.07
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /body -->
+    </div>
+    <!-- /page -->
+  </body>
+</html>
