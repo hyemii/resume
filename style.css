@@ -1,0 +1,335 @@
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family:
+      "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    background: #f5f6f8;
+    color: #1a1a2e;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .page {
+    max-width: 860px;
+    margin: 24px auto;
+    background: #fff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  /* ── 헤더 ── */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 28px 44px 22px;
+  }
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 3px;
+  }
+  .header .title-eng {
+    font-size: 11.5px;
+    color: #a0aec0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .header-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    font-size: 11.5px;
+    color: #cbd5e0;
+    white-space: nowrap;
+  }
+  .header-contact a {
+    color: #90cdf4;
+    text-decoration: none;
+  }
+  .header-contact a:hover {
+    text-decoration: underline;
+  }
+
+  .summary-box {
+    margin-top: 14px;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.07);
+    border-left: 3px solid #4299e1;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #e2e8f0;
+    line-height: 1.65;
+  }
+
+  /* ── 스킬 바 ── */
+  .skills-bar {
+    background: #f0f4ff;
+    padding: 11px 44px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .skill-tag {
+    background: #fff;
+    border: 1px solid #c3d0f5;
+    color: #2b4acb;
+    padding: 2px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .skill-tag.gray {
+    border-color: #d1d5db;
+    color: #4b5563;
+  }
+
+  /* ── 본문 레이아웃 ── */
+  .body {
+    padding: 0 44px 40px;
+  }
+
+  /* ── 섹션 ── */
+  .section {
+    margin-top: 26px;
+  }
+  .section-title {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #4299e1;
+    border-bottom: 2px solid #ebf4ff;
+    padding-bottom: 5px;
+    margin-bottom: 14px;
+  }
+
+  /* ── 회사 블록 ── */
+  .company-block {
+    margin-bottom: 24px;
+  }
+  .company-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3px;
+  }
+  .company-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1a2e;
+  }
+  .company-period {
+    font-size: 11px;
+    color: #718096;
+    white-space: nowrap;
+  }
+  .company-meta {
+    font-size: 11px;
+    color: #718096;
+    margin-bottom: 10px;
+  }
+  .company-meta span {
+    margin-right: 10px;
+  }
+  .company-meta .role {
+    color: #2b6cb0;
+    font-weight: 600;
+  }
+
+  /* ── 프로젝트 블록 ── */
+  .project {
+    margin-bottom: 12px;
+    padding: 10px 14px;
+    border-left: 3px solid #e2e8f0;
+    background: #fafbff;
+    border-radius: 0 4px 4px 0;
+  }
+  .project:last-child {
+    margin-bottom: 0;
+  }
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+  }
+  .project-name {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #2d3748;
+  }
+  .project-period {
+    font-size: 10.5px;
+    color: #a0aec0;
+    white-space: nowrap;
+  }
+  .project-desc {
+    font-size: 11.5px;
+    color: #4a5568;
+    margin-bottom: 7px;
+  }
+
+  .detail-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .detail-list li {
+    font-size: 11.5px;
+    color: #4a5568;
+    padding-left: 13px;
+    position: relative;
+  }
+  .detail-list li::before {
+    content: "·";
+    position: absolute;
+    left: 3px;
+    color: #4299e1;
+    font-weight: 700;
+  }
+  .detail-list li strong {
+    color: #2d3748;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 7px;
+  }
+  .tag {
+    background: #ebf4ff;
+    color: #2b6cb0;
+    font-size: 10px;
+    padding: 1px 7px;
+    border-radius: 3px;
+  }
+  .tag.green {
+    background: #f0fff4;
+    color: #276749;
+  }
+  .tag.purple {
+    background: #faf5ff;
+    color: #553c9a;
+  }
+  .tag.orange {
+    background: #fffaf0;
+    color: #c05621;
+  }
+  .tag.gray {
+    background: #f7f8fa;
+    color: #4b5563;
+  }
+
+  /* ── 이전 회사 (간략) ── */
+  .prev-company {
+    margin-bottom: 24px;
+  }
+
+  /* ── 수상/기타 ── */
+  .etc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .etc-item {
+    padding: 9px 12px;
+    background: #fafbff;
+    border: 1px solid #e8edf5;
+    border-radius: 4px;
+  }
+  .etc-item .label {
+    font-size: 10.5px;
+    font-weight: 700;
+    color: #4299e1;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+  }
+  .etc-item p {
+    font-size: 11.5px;
+    color: #4a5568;
+  }
+
+  /* ── 인쇄 ── */
+  @media print {
+    @page {
+      size: A4;
+      margin: 12mm 14mm;
+    }
+    body {
+      background: #fff;
+      font-size: 10.5px;
+      line-height: 1.5;
+    }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      border-radius: 0;
+      max-width: 100%;
+    }
+    .header {
+      padding: 20px 28px 16px;
+    }
+    .header h1 {
+      font-size: 22px;
+    }
+    .skills-bar,
+    .body {
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+    /* 제목 뒤에 바로 내용이 따라오도록 */
+    .section-title,
+    .company-header,
+    .company-meta,
+    .project-header,
+    .project-desc {
+      break-after: avoid;
+    }
+    /* 불릿 하나가 페이지 경계에서 잘리지 않도록 */
+    .detail-list li {
+      break-inside: avoid;
+    }
+    /* 태그 줄이 앞 내용과 분리되지 않도록 */
+    .tags {
+      break-before: avoid;
+      break-inside: avoid;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .header,
+    .skills-bar,
+    .body {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .header-top {
+      flex-direction: column;
+    }
+    .header-contact {
+      align-items: flex-start;
+    }
+    .etc-grid {
+      grid-template-columns: 1fr;
+    }
+  }
